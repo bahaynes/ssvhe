@@ -1,0 +1,57 @@
+# Ignore everything by default
+*
+
+# Directories (allow git to recurse)
+!*/
+
+# Root configs
+!mmc-pack.json
+!instance.cfg
+!.gitignore
+
+# Minecraft folder structure
+!minecraft/
+minecraft/*
+
+# Allow Configs
+!minecraft/config/
+!minecraft/config/**
+
+# Allow Default Configs
+!minecraft/defaultconfigs/
+!minecraft/defaultconfigs/**
+
+# Allow KubeJS Scripts and Text Assets
+!minecraft/kubejs/
+!minecraft/kubejs/**
+
+# Explicitly ignore non-text files that might be caught in allowed folders
+*.jar
+*.zip
+*.lock
+*.log
+*.png
+*.jpg
+*.jpeg
+*.mp3
+*.ogg
+*.nbt
+*.dat
+*.gz
+*.mp4
+*.webm
+
+# Ignore specific junk
+minecraft/logs/
+minecraft/crash-reports/
+minecraft/saves/
+minecraft/screenshots/
+minecraft/web-cache/
+minecraft/usercache.json
+minecraft/usernamecache.json
+minecraft/servers.dat
+minecraft/options.txt
+
+# OS Junk
+Thumbs.db
+.DS_Store
